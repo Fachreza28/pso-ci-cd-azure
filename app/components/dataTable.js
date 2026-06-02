@@ -35,8 +35,9 @@ const DataTable = ({ cols = [], rows = [] }) => {
           <tr key={i}>
             <td>{tr?._id}</td>
             <td>{tr?.title}</td>
-            <td>{tr?.description.substring(0, 40).concat("...")}</td>
+            <td>{tr?.description?.substring(0, 40).concat("...")}</td>
             <td>{tr?.price}</td>
+            <td>{(tr?.tags || []).join(", ") || "-"}</td>
             <td>
               <div className="d-flex gap-1">
                 <Link

@@ -5,6 +5,10 @@ const productSchema = new Schema(
     title: String,
     description: String,
     price: Number,
+    tags: {
+      type: [String],
+      default: [],
+    },
   },
   { timestamps: true }
 );

@@ -92,6 +92,16 @@ const EditProduct = ({ id }) => {
                   {...register("price", { required: true })}
                 />
               </div>
+              <div className="mb-3">
+                <label htmlFor="tags" className="form-label">
+                  Tags (comma separated)
+                </label>
+                <input
+                  className="form-control"
+                  placeholder="electronics, home, sale"
+                  {...register("tags")}
+                />
+              </div>
               <div className="mb-3 text-end">
                 <input type="submit" className="btn btn-primary" />
               </div>

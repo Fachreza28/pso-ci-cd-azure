@@ -67,6 +67,15 @@ const ViewProduct = ({ id }) => {
                   {...register("price", { disabled: true })}
                 />
               </div>
+              <div className="mb-3">
+                <label htmlFor="tags" className="form-label">
+                  Tags
+                </label>
+                <input
+                  className="form-control"
+                  {...register("tags", { disabled: true })}
+                />
+              </div>
             </form>
           </div>
         </div>
